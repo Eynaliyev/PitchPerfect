@@ -9,7 +9,25 @@
 import UIKit
 
 class PlaySoundsViewController: UIViewController {
+    
+    @IBOutlet weak var snailButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var rabbitButton: UIButton!
+    @IBOutlet weak var vaderButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var revertButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
+    
+    
+    @IBAction func playSoundForButton(sender: UIButton) {
+        print("Play Sound Button pressed")
+    }
 
+    @IBAction func stopButtonPressed(sender: AnyObject) {
+        print("Stop Audio Button pressed")
+    }
+    
     var recordedAudioURL: NSURL!
 
     override func viewDidLoad() {

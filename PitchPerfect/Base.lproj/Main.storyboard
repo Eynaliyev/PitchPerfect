@@ -86,11 +86,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="SnailButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="Gha-3a-CSz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cls-3f-fLh" userLabel="RabbitButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="RabbitButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="PLp-e0-dhi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -102,11 +108,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="ChipmunkButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="BOh-hJ-caD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE7-Pw-WaK" userLabel="DarthVader">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="DarthVaderButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="BZD-rU-02m"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -118,11 +130,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="EchoButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="AzV-eu-ea9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdw-i8-8Cv" userLabel="RevertButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="RevertButton"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="SWK-uv-6v3" eventType="touchUpInside" id="Yin-f8-Pyn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -134,6 +152,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="134"/>
                                                 <animations/>
                                                 <state key="normal" image="stopRecordingButton"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="SWK-uv-6v3" eventType="touchUpInside" id="1xn-UM-T7E"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -151,6 +172,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="kKj-bN-qBF" secondAttribute="trailing" id="kMi-Ap-XUN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="lj8-Qg-W8j" id="4ci-ON-711"/>
+                        <outlet property="echoButton" destination="muS-Eh-Zka" id="VLH-bT-fta"/>
+                        <outlet property="rabbitButton" destination="cls-3f-fLh" id="LUS-dK-Fjy"/>
+                        <outlet property="revertButton" destination="Tdw-i8-8Cv" id="2Fs-Wu-ECV"/>
+                        <outlet property="snailButton" destination="fA2-J5-oEg" id="BJU-2j-GQF"/>
+                        <outlet property="stopButton" destination="Rgz-jy-oGz" id="6dd-lz-iis"/>
+                        <outlet property="vaderButton" destination="cE7-Pw-WaK" id="M8f-PF-VJs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDj-Mj-jaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
